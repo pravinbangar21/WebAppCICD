@@ -67,7 +67,7 @@ resource "aws_instance" "webapp" {
             sudo yum install httpd -y
             sudo service httpd start
             sudo chkconfig httpd on
-            echo "<html><h1>Hi Pravin B...Your terraform deployment and CICD Pipeline worked !!!</h1></html>" | sudo tee /var/www/html/index.html
+            echo "<html><h1>Hello !! Pravin B...Your terraform deployment and CICD Pipeline worked !!!</h1></html>" | sudo tee /var/www/html/index.html
             hostname -f >> /var/www/html/index.html
             EOF
 
